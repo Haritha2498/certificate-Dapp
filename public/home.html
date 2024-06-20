@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CERTIFICATE_DAPP</title>
+    <link rel="stylesheet" href="cssfiles/style1.css">
+</head>
+<body>
+    <div class="s1">
+    <nav> <a href="./"><input class="s2"type="button" name="Home" value="Home"></a>
+        <a href="./form"  ><input class="s2"type="button" name="issue" value="Issue Certificate"></a></nav>
+    </div>
+    <h2>Certificate Dapp</h2>
+    <div style="text-align: center;"><img src="image.jpg" alt="Image not found"></div>
+    <div class="s4">
+        <table>
+            <tr>
+                <td>
+                    <input type="text" class="i1" placeholder="Enter certificate id" id="cerid">
+                </td>
+                <td>
+                    <input type="button" value="SEARCH" class="s2" onclick="postid()" >
+                </td>
+            </tr>
+        </table>
+    </div>
+        
+
+    <script>
+        function postid(){
+            const id=document.getElementById("cerid").value;
+            console.log(id)
+            const url=`/form/${id}`;
+            console.log(url);
+            window.location.href=url; 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.im1{
+    width:200px;
+}
+.d1{
+    text-align: center;
+    background-color:  aliceblue; 
+    height: 450px; 
+    margin-left: 200px;
+    margin-right: 200px;
+    height:600px;
+}
+h2{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color: brown;
+}
+p{
+    font-size: 25px;
+}
+
+@media only screen and (max-width:800px){
+    .im1{
+        width: 100px;
+    }
+    h2{
+        font-size: 18px;
+        color: rgb(141, 61, 61);
+    }
+    p{
+        font-size: 18px;
+    }
+}
+

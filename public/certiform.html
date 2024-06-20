@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue_certificate</title>
+    <link rel="stylesheet" href="cssfiles/style2.css">
+    
+</head>
+<body bgcolor=" #e5e7e9 ">
+    <div class="s1">
+        
+        <nav> <a href="./"><input class="s2"type="button" name="Home" value="Home"></a>
+        </nav>
+        
+    </div>
+    <h2 style="text-align: left; margin-left: 30px;">Certificate Dapp</h2>
+    <div class="s3">
+        <b><h2 style="text-align: center;padding-top: 20px;">  Issue New Certificate
+        </h2>
+        </b>
+        <div class="s4">
+        <form action="/submitform" method="POST">
+            Select Course* <br>
+            <select name="course" id="course" class="in">
+                <option value="cba" selected>Certified Blockchain Associate</option>
+				<option value="CED">Certified Ethereum Developer</option>
+				<option value="CHF">Certified Hyperledger Fabric Developer</option>
+            </select>
+            <br><br>
+            Certificate Id: *<br>
+            <input type="text" name="cerid" class="in" id="cerid">
+            <br><br>
+            Candidate name* <br>
+            <input class="in" type="text" name="name" id="name"><br>
+            <br>
+            Select Grade* <br>
+            <select class="in" name="grade" id="grade">
+                <option value="s">S</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+
+            </select> <br><br>
+            Issue Date* <br>
+            <input class="in" type="date" name="date" id="date">
+            <br><br>
+            <div style="text-align: center;">
+            <a href="issuecerti.html"  ><input type="button" value="Issue Certificate" class="s2" ></a>
+        </div>
+    </div>
+        </form>
+    </div>
+</body>
+</html>
